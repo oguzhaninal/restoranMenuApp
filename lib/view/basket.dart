@@ -146,8 +146,17 @@ class _BasketState extends State<Basket> {
                           ],
                         ),
                         SizedBox(
+                          height: 10,
+                        ),
+                        SizedBox(
                           height: size.height * .05,
-                        )
+                        ),
+                        Center(
+                          child: Text(
+                            'Lütfen fişlerinizi yere atmayınız :)',
+                            style: myTextStyle,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -207,7 +216,7 @@ class _BasketState extends State<Basket> {
         ),
         Spacer(),
         Text(
-          price + 'TL',
+          price + ' TL',
           style: myTextStyle,
         )
       ],
