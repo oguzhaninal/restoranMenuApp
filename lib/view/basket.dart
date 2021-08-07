@@ -140,7 +140,7 @@ class _BasketState extends State<Basket> {
                             ),
                             Spacer(),
                             Text(
-                              totalPrice.toString() + 'TL',
+                              totalPrice.toString() + ' TL',
                               style: myTextStyle,
                             )
                           ],
