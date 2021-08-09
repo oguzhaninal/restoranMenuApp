@@ -209,7 +209,6 @@ class _SubDeteailsState extends State<SubDeteails> {
                                                         .toString() +
                                                     ' ₺',
                                         style: TextStyle(
-                                          overflow: TextOverflow.ellipsis,
                                           color: customColors.mainRed,
                                           fontWeight: FontWeight.w500,
                                         ),

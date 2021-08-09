@@ -7,7 +7,7 @@ import 'package:sambaposapp/constants/constantInit.dart';
 import 'package:sambaposapp/models/mainMenuModel.dart';
 import 'package:sambaposapp/models/menuItemsModel.dart';
 import 'package:sambaposapp/view/menuDetails.dart';
-import 'package:sambaposapp/view/subDetails.dart';
+import 'package:sambaposapp/view/sub_details.dart';
 import 'package:yaml/yaml.dart';
 
 import 'basket.dart';

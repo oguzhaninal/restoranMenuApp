@@ -64,7 +64,6 @@ class ItemCard extends StatelessWidget {
                   Text(
                     selectedMainMenu.items[index].price.toString() + ' ₺',
                     style: TextStyle(
-                      overflow: TextOverflow.ellipsis,
                       color: customColors.mainRed,
                       fontWeight: FontWeight.w500,
                     ),
