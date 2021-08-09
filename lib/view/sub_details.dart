@@ -1,5 +1,3 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sambaposapp/components/transition.dart';
@@ -12,7 +10,7 @@ import 'package:yaml/yaml.dart';
 
 class SubDeteails extends StatefulWidget {
   final YamlList subList;
-  MenuItemModel selectedMainMenu;
+  final MenuItemModel selectedMainMenu;
   int selectedKeyIndex;
   List<SubItemModel> selectedSubItems = [];
 
@@ -68,7 +66,7 @@ class _SubDeteailsState extends State<SubDeteails> {
     await showCupertinoModalPopup(
       context: context,
       builder: (_) => CupertinoActionSheet(
-        title: Text('Seçenekler'),
+        title: const Text('Seçenekler'),
         actions: List.generate(
           options.length,
           (index) => Material(
@@ -97,11 +95,11 @@ class _SubDeteailsState extends State<SubDeteails> {
                       SizedBox(width: size.width * .05),
                       Text(
                         options[index].name,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontFamily: 'GowunBatang',
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Text(
                         options[index].price == 0
                             ? 'Ücretsiz'
@@ -173,7 +171,7 @@ class _SubDeteailsState extends State<SubDeteails> {
                                 Container(
                                   width: size.width * .3,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       topLeft: Radius.circular(8),
                                       bottomLeft: Radius.circular(8),
                                     ),
@@ -186,7 +184,7 @@ class _SubDeteailsState extends State<SubDeteails> {
                                   ),
                                 ),
                                 SizedBox(width: size.width * .02),
-                                Container(
+                                SizedBox(
                                   width: size.width * .5,
                                   child: Column(
                                     crossAxisAlignment:
@@ -197,7 +195,7 @@ class _SubDeteailsState extends State<SubDeteails> {
                                       Text(
                                         snapshot.data[listIndex].name ??
                                             'İstemiyorum',
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
@@ -235,7 +233,7 @@ class _SubDeteailsState extends State<SubDeteails> {
                                   child: Container(
                                     width: size.width * .1,
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         topRight: Radius.circular(8),
                                         bottomRight: Radius.circular(8),
                                       ),
